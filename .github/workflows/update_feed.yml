@@ -34,3 +34,12 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Head the CSV to confirm
         run: head limited_to_50.csv 
+        
+      - name: Commit files # commit the output folder
+        run: |
+              git config --local user.email "test@github.com"
+              git config --local user.name "GitHub Action test"
+              git add ./limited_to_50.csv
+              git commit -m "Add changes"
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
