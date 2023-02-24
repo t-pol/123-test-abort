@@ -29,7 +29,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Fetch data and save to CSV
-        run: curl 'https://onionoo.torproject.org/details?limit=50' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > limited_to_50.csv
+        # Limited to 50 results, to test functionality.
+        # run: curl 'https://onionoo.torproject.org/details?limit=50' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > limited_to_50.csv
+        run: curl 'https://onionoo.torproject.org/details' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > limited_to_50.csv
 
       # Runs a set of commands using the runners shell
       - name: Head the CSV to confirm
