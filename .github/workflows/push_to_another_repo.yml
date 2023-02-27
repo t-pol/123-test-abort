@@ -1,0 +1,42 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Update TOR Nodes - Push to public repo
+
+# Controls when the workflow will run
+on:
+  schedule:
+    - cron: "10 10 1/2 * *"
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v3
+
+      # Runs a single command using the runners shell
+      - name: Fetch data and save to CSV
+        run: curl 'https://onionoo.torproject.org/details' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > tor_feed.csv
+
+      # Runs a set of commands using the runners shell
+      - name: Head the CSV to confirm
+        run: head tor_feed.csv 
+        
+      - name: Pushes to another repository
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '123-test-abort'
+          destination-github-username: 'cgiampoulakis'
+          destination-repository-name: 'open_feeds'
+          user-email: test@github.com
+          target-branch: main
