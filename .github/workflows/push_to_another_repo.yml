@@ -41,3 +41,4 @@ jobs:
           destination-repository-name: 'open_feeds'
           user-email: test@github.com
           target-branch: main
+          commit-message: pushed from $GITHUB_REF
