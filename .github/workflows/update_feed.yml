@@ -37,7 +37,7 @@ jobs:
         
       # Runs a set of commands using the runners shell
       - name: Head the CSV to confirm
-        run: head tor_feed.csv && head tor_feed_ip_flags.csv
+        run: head tor_feed.csv && echo -e '\n\n' && head limited_to_50.csv
         
       - name: Commit files # commit the output folder
         run: |
