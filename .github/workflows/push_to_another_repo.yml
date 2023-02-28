@@ -36,7 +36,7 @@ jobs:
           # API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
         with:
-          source-directory: 'tor_feed.csv'
+          source-directory: '123-test-abort\tor_feed.csv'
           destination-github-username: 'cgiampoulakis'
           destination-repository-name: 'open_feeds'
           user-email: test@github.com
