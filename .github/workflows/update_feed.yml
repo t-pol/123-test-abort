@@ -35,7 +35,7 @@ jobs:
       - name: Fetch data and save to CSV - Include Header
         run: echo '"nickname","flags","country_code","ip","port","is_running","verified_hostname"' > limited_to_50.csv && curl 'https://onionoo.torproject.org/details?limit=50' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' >> limited_to_50.csv
       - name: Fetch data and save to JSON
-        run: curl 'https://onionoo.torproject.org/details?limit=10' | jq '.relays[] | [. | {nickname: .nickname, flags: .flags, country: .country, addresses: .or_addresses, running: .running, verified_host_names: .verified_host_names}]' > tor_feed.json
+        run: curl 'https://onionoo.torproject.org/details?limit=10' | jq '.relays[] | [. | {nickname:.nickname, flags:.flags, country:.country, addresses:.or_addresses, running:.running, verified_host_names:.verified_host_names}]' > tor_feed.json
 
       # Runs a set of commands using the runners shell
       - name: Head the CSV to confirm
