@@ -31,7 +31,7 @@ jobs:
       - name: Fetch data and save to CSV
         # Limited to 50 results, to test functionality.
         # run: curl 'https://onionoo.torproject.org/details?limit=50' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > limited_to_50.csv
-        run: curl 'https://onionoo.torproject.org/details' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country_name, .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > tor_feed.csv      
+        run: curl 'https://onionoo.torproject.org/details' | jq -r '.relays[] | [.nickname, ([.flags[]]  | join("|")), .country, (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1]), .running, .verified_host_names[]? // "NULL"] | @csv' > tor_feed.csv      
       - name: Fetch data and save to CSV - Only IP and Flags
         run: curl 'https://onionoo.torproject.org/details' | jq -r '.relays[] | [([.flags[]]  | join("|")), (.or_addresses[0]|split(":")[0]), (.or_addresses[0]|split(":")[1])] | @csv' > tor_feed_ip_flags.csv
         
