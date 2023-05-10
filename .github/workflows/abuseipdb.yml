@@ -29,7 +29,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Fetch data and save to JSON
-        run: curl -G 'https://api.abuseipdb.com/api/v2/blacklist' -d confidenceMinimum=90 -H 'Key: 62c97cc651c020c8183d48049bcec43f085643fa0c0725c3cbd34ea42803233cc1e3933c6c1790ed' -H 'Accept: application/json' > abuseipdb_blacklist_unfiltered.json
+        run: curl -G 'https://api.abuseipdb.com/api/v2/blacklist' -d confidenceMinimum=90 -H 'Key:62c97cc651c020c8183d48049bcec43f085643fa0c0725c3cbd34ea42803233cc1e3933c6c1790ed' -H 'Accept:application/json' > abuseipdb_blacklist_unfiltered.json
       - name: Keep useful fields
         run: cat abuseipdb_blacklist_unfiltered.json | jq -r  '[.data[] | {ipAdress:.ipAddress, countryCode:.countryCode, abuseConfidenceScore:.abuseConfidenceScore, lastReportedAt:.lastReportedAt}] | @json' > abuseipdb_blacklist.json
 
