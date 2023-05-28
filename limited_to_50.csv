@@ -40,7 +40,7 @@
 "IBDUUIBAD","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","de","81.169.180.28","9001",true,"h2906131.stratoserver.net"
 "Pilsbirne","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","nl","51.158.146.93","443",true,"robola.noho.st"
 "NTH20R3","Exit|Fast|Running|Stable|Valid","nl","192.42.116.217","9002",true,"20.tor-exit.nothingtohide.nl"
-"DigiGesTor1e1","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ch","185.195.71.244","443",true,"NULL"
+"DigiGesTor1e1","Exit|Fast|Guard|Running|Stable|V2Dir|Valid","ch","185.195.71.244","443",true,"NULL"
 "motauri","Exit|Fast|HSDir|Running|Stable|V2Dir|Valid","se","95.143.193.125","443",true,"NULL"
 "bang1","Fast|HSDir|Running|Stable|V2Dir|Valid","us","134.209.159.74","443",true,"NULL"
 "FreshOnion","Fast|Running|Stable|V2Dir|Valid","vn","183.80.133.98","19997",true,"NULL"
