@@ -12,7 +12,7 @@
 "NTH22R5","Exit|Fast|Running|Stable|Valid","nl","192.42.116.174","9004",true,"22.tor-exit.nothingtohide.nl"
 "NTH33R5","Exit|Fast|Running|Stable|Valid","nl","192.42.116.185","9004",true,"33.tor-exit.nothingtohide.nl"
 "namie","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","pl","109.241.214.64","443",true,"109241214064.gdansk.vectranet.pl"
-"batteu","Fast|Guard|Running|Stable|V2Dir|Valid","fr","193.70.113.21","9001",true,"vps-cc987353.vps.ovh.net"
+"batteu","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","fr","193.70.113.21","9001",true,"vps-cc987353.vps.ovh.net"
 "Athena","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","lu","104.244.79.75","443",true,"tor-relay-athena.greektor.net"
 "405torb","Running|V2Dir|Valid","us","174.67.38.244","9050",true,"ip174-67-38-244.ok.ok.cox.net"
 "eisbaer","Exit|Fast|Running|Stable|Valid","at","109.70.100.70","9002",true,"tor-exit-anonymizer.appliedprivacy.net"
