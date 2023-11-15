@@ -2,7 +2,6 @@
         "api": {
         "version": 1,
         "format": "json",
-        "file_group_count": 5151
     },
     "common_ransom_files_extensions": [
         "*.Mafer",
