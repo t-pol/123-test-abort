@@ -1,0 +1,25 @@
+{
+    "hacktools" :[
+        {
+            "Process":"mimikatz.exe",
+            "CommandLine_Content":[
+                "SEKURLSA::Krbtgt",
+                "PRIVILEGE::Debug"
+            ],
+            "Info":[
+                "https://github.com/gentilkiwi/mimikatz/tree/master",
+                "https://adsecurity.org/?page_id=1821"
+            ]
+        },
+        {
+            "Process": "NoFilter.exe",
+            "CommandLine_Content": [
+                "-s"
+            ],
+            "Info": [
+                "https://www.deepinstinct.com/blog/nofilter-abusing-windows-filtering-platform-for-privilege-escalation",
+                "https://github.com/deepinstinct/NoFilter/blob/121d215ab130c5e8e3ad45a7e7fcd56f4de97b4d/NoFilter/Consts.cpp#L3"
+            ]
+        }
+    ]
+}
