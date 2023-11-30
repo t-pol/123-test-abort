@@ -11,7 +11,7 @@
         ]
     },
     {
-        "Process": "NoFilter.exe",
+        "Process": "Nofilter.exe",
         "CommandLine_Content": [
             "-s"
         ],
