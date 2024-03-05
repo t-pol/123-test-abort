@@ -19,5 +19,71 @@
             "https://www.deepinstinct.com/blog/nofilter-abusing-windows-filtering-platform-for-privilege-escalation",
             "https://github.com/deepinstinct/NoFilter/blob/121d215ab130c5e8e3ad45a7e7fcd56f4de97b4d/NoFilter/Consts.cpp#L3"
         ]
+    },
+    {
+        "Process": "Rubeus.exe",
+        "CommandLine_Content": [
+            "asreproast",
+            "dump /service:krbtgt",
+            "dump /luid:0x",
+            "kerberoast",
+            "createnetonly /program:",
+            "ptt /ticket:",
+            "/impersonateuser:",
+            "renew /ticket:",
+            "asktgt /user:",
+            "harvest /interval:",
+            "s4u /user:",
+            "s4u /ticket:",
+            "hash /password:",
+            "golden /aes256:",
+            "silver /user:"
+        ],
+        "Info": [
+            "https://blog.harmj0y.net/redteaming/from-kekeo-to-rubeus",
+            "https://m0chan.github.io/2019/07/31/How-To-Attack-Kerberos-101.html",
+            "https://github.com/GhostPack/Rubeus",
+            "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_hktl_rubeus.yml"
+        ]
+    },
+    {
+        "Process": "SafetyKatz.exe",
+        "CommandLine_Content": [],
+        "Info": [
+            "https://github.com/GhostPack/SafetyKatz",
+            "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_hktl_safetykatz.yml"
+        ]
+    },
+    {
+        "Process": "EDRSilencer.exe",
+        "CommandLine_Content": [],
+        "Info": [
+            "https://github.com/netero1010/EDRSilencer"
+        ]
+    },
+    {
+        "Process": "KrbRelay.exe",
+        "CommandLine_Content": [
+            ["-spn", "-clsid", "-rbcd"],
+            ["shadowcred", "clsid", "spn"],
+            ["spn", "session", "clsid"],
+            ["relay","-Domain","-ComputerName"],
+            ["krbscm","-sc"],
+            ["spawn","-d","-cn", "-cp"]
+        ],
+        "Info": [
+            "https://github.com/cube0x0/KrbRelay",
+            "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_hktl_krbrelay.yml"
+        ]
+    },
+    {
+        "Process": "LocalPotato.exe",
+        "CommandLine_Content": [
+            [".exe -i C:\\", "-o Windows\\"]
+        ],
+        "Info": [
+            "https://www.localpotato.com/localpotato_html/LocalPotato.html",
+            "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_hktl_localpotato.yml"
+            ]
     }
 ]
