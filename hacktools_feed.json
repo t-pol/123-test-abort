@@ -85,5 +85,14 @@
             "https://www.localpotato.com/localpotato_html/LocalPotato.html",
             "https://github.com/SigmaHQ/sigma/blob/master/rules/windows/process_creation/proc_creation_win_hktl_localpotato.yml"
             ]
+    },
+    {
+        "Process": "SigmaPotato.exe",
+        "CommandLine_Content": [
+            ["--revshell"]
+        ],
+        "Info": [
+            "https://github.com/tylerdotrar/SigmaPotato"
+            ]
     }
 ]
