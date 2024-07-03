@@ -94,5 +94,14 @@
         "Info": [
             "https://github.com/tylerdotrar/SigmaPotato"
             ]
+    },
+    {
+        "Process": "go-secdump.exe",
+        "CommandLine_Content": [
+            ["--sam", "--lsa", "--dcc2", "--backup-dacl", "--relay"]
+        ],
+        "Info": [
+            "https://github.com/jfjallid/go-secdump"
+            ]
     }
 ]
