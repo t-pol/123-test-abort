@@ -35,7 +35,7 @@
 "NTH30R8","Exit|Fast|Running|Stable|Valid","nl","192.42.116.182","9007",true,"30.tor-exit.nothingtohide.nl"
 "l25","Fast|Running|Stable|Valid","nl","185.66.141.125","9001",true,"rev.xor.bz"
 "comeon67","Fast|Guard|Running|Stable|V2Dir|Valid","ch","179.43.161.174","444",false,"NULL"
-"bauruine","Exit|Fast|Guard|Running|Stable|V2Dir|Valid","nl","45.134.225.36","443",true,"NULL"
+"bauruine","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","nl","45.134.225.36","443",true,"NULL"
 "effiorg1984","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","fi","89.236.112.100","443",true,"tor-jy.effi.org"
 "ande","Fast|Running|V2Dir|Valid","cl","64.176.3.54","443",true,"NULL"
 "tried","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","us","107.155.81.178","443",true,"NULL"
