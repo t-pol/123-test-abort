@@ -17,7 +17,6 @@
 "eisbaer","Exit|Fast|Running|Stable|Valid","at","109.70.100.70","9002",true,"tor-exit-anonymizer.appliedprivacy.net"
 "right2","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","us","174.128.250.165","80",true,"right.usetor.wtf"
 "kaitornode","Fast|Running|Stable|V2Dir|Valid","kr","221.145.183.106","9001",true,"NULL"
-"a9","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","de","5.9.12.251","9001",false,"static.251.12.9.5.clients.your-server.de"
 "anarchistcook","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ch","179.43.159.78","9001",true,"NULL"
 "mooooooooon","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ca","154.12.162.243","9001",true,"NULL"
 "jollyjack","Fast|HSDir|Running|Stable|V2Dir|Valid","bd","45.249.101.87","9090",false,"NULL"
@@ -49,3 +48,4 @@
 "DigiGesTor1e1","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ch","185.195.71.244","443",true,"NULL"
 "motauri","Exit|Fast|HSDir|Running|Stable|V2Dir|Valid","se","95.143.193.125","443",true,"NULL"
 "WishMaster","Fast|Running|V2Dir|Valid","ru","31.192.107.132","443",true,"NULL"
+"bang1","Fast|HSDir|Running|Stable|V2Dir|Valid","us","134.209.159.74","443",true,"NULL"
