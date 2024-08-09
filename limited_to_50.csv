@@ -19,7 +19,7 @@
 "anarchistcook","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ch","179.43.159.78","9001",true,"NULL"
 "Quintex13","Exit|Fast|HSDir|Running|Stable|V2Dir|Valid","us","204.8.96.103","443",true,"tor13.quintex.com"
 "mooooooooon","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","ca","154.12.162.243","9001",true,"NULL"
-"jollyjack","Fast|Running|Stable|V2Dir|Valid","bd","45.249.101.87","9090",true,"NULL"
+"jollyjack","Fast|HSDir|Running|Stable|V2Dir|Valid","bd","45.249.101.87","9090",true,"NULL"
 "INSRelay42at8443","Fast|HSDir|Running|Stable|V2Dir|Valid","at","140.78.100.42","8443",true,"NULL"
 "HandsofGoldSpa","BadExit|MiddleOnly|Running|Stable|Valid","de","176.118.193.106","443",true,"NULL"
 "FTPhalifaxRWTH","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","de","137.226.34.45","9001",true,"not-ftp.halifax.rwth-aachen.de"
