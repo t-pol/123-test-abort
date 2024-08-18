@@ -1,6 +1,6 @@
 "nickname","flags","country_code","ip","port","is_running","verified_hostname"
 "seele","Fast|HSDir|Running|Stable|V2Dir|Valid","us","104.53.221.159","9001",true,"104-53-221-159.lightspeed.sntcca.sbcglobal.net"
-"tor4novgnet","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","fr","5.196.8.113","9001",true,"vps-3f94841e.vps.ovh.net"
+"tor4novgnet","Exit|Fast|Guard|Running|Stable|V2Dir|Valid","fr","5.196.8.113","9001",true,"vps-3f94841e.vps.ovh.net"
 "SENDNOOSEplz","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","us","204.137.14.106","443",true,"NULL"
 "titamon3","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","it","178.218.144.18","443",true,"NULL"
 "CalyxInstitute14","Exit|Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","us","162.247.74.201","443",true,"kunstler.tor-exit.calyxinstitute.org"
