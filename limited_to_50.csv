@@ -24,7 +24,7 @@
 "mooooooooon","BadExit|Fast|MiddleOnly|Running|Stable|Valid","ca","154.12.162.243","9001",true,"NULL"
 "jollyjack","Fast|HSDir|Running|Stable|V2Dir|Valid","bd","45.249.101.87","9090",true,"NULL"
 "INSRelay42at8443","Fast|Running|Stable|V2Dir|Valid","at","140.78.100.42","8443",false,"NULL"
-"LoveOnlyMonero","Fast|Running|Valid","se","185.153.55.208","443",true,"NULL"
+"LoveOnlyMonero","Fast|Running|Stable|Valid","se","185.153.55.208","443",true,"NULL"
 "HandsofGoldSpa","BadExit|MiddleOnly|Running|Stable|Valid","de","176.118.193.106","443",true,"NULL"
 "FTPhalifaxRWTH","Fast|Guard|HSDir|Running|Stable|V2Dir|Valid","de","137.226.34.45","9001",true,"not-ftp.halifax.rwth-aachen.de"
 "NTH5R7","Exit|Fast|Running|Stable|Valid","nl","192.42.116.195","9006",true,"5.tor-exit.nothingtohide.nl"
